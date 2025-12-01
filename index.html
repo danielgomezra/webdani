@@ -1,9 +1,78 @@
-<html>
-<head>
-    <title>My Web Page</title>
-</head>
-<body>
-    <h1>Welcome to the Sample HTML Page</h1>
-    <p>This is a simple HTML document.</p>  
-</body>
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Presentación — Estudiante de Análisis de Datos</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container">
+                <h1 class="site-title">Mi Portafolio</h1>
+                <nav class="nav">
+                    <a href="#sobre">Sobre mí</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container main">
+            <section class="hero">
+                <div class="hero-profile">
+                    <div class="avatar" aria-hidden="true"></div>
+                    <div class="hero-text">
+                        <h2>Hola, soy estudiante de <span class="accent">Análisis de Datos</span></h2>
+                        <p class="lead">Me apasiona convertir datos en historias claras y accionables. Actualmente estudio Análisis de Datos y trabajo en proyectos personales donde aplico limpieza de datos, visualización y modelos básicos de predicción.</p>
+                        <div class="cta">
+                            <a class="btn" href="#contacto">Contactarme</a>
+                            <a class="btn secondary" href="#habilidades">Ver habilidades</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sobre" class="card">
+                <h3>Sobre mí</h3>
+                <p>Soy estudiante de Análisis de Datos con interés en la estadística aplicada, limpieza de datos, y visualización. Me gusta aprender nuevas herramientas para transformar conjuntos de datos complejos en insights útiles que ayuden a la toma de decisiones.</p>
+            </section>
+
+            <section id="habilidades" class="grid">
+                <div class="card">
+                    <h4>Habilidades técnicas</h4>
+                    <ul>
+                        <li>Limpieza y preparación de datos</li>
+                        <li>Visualización (matplotlib, seaborn, ggplot)</li>
+                        <li>Análisis estadístico básico</li>
+                        <li>Introducción a modelado predictivo</li>
+                        <li>SQL y manipulación de datos</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Proyectos y práctica</h4>
+                    <ul>
+                        <li>Exploración de datasets públicos</li>
+                        <li>Dashboards sencillos con herramientas web</li>
+                        <li>Análisis comparativos y reportes</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="contacto" class="card contact">
+                <h3>Contacto</h3>
+                <p>Si quieres trabajar conmigo o ver mis proyectos, escríbeme un correo o conéctate en redes profesionales.</p>
+                <ul class="contact-list">
+                    <li>Email: <a href="mailto:tucorreo@example.com">tucorreo@example.com</a></li>
+                    <li>LinkedIn / GitHub: enlaza tus perfiles aquí</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <small>© 2025 — Estudiante de Análisis de Datos</small>
+            </div>
+        </footer>
+    </body>
 </html>
